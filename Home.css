@@ -1,0 +1,87 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.1em;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.container{
+    color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(253, 253, 253); 
+    text-transform: uppercase;
+    box-shadow: 0px 0px 5px #00000052;
+}
+
+.primeiradiv video{
+    position: fixed; 
+	bottom: 0;
+	height: auto; 
+	z-index: -1000;
+}
+
+.cardtitulo {
+    position: absolute;
+    bottom: 20px;
+    left: 15%;
+    padding-bottom: 200px;
+  }
+
+  .titulo {
+    font-size: calc(40px + (60 - 40) * ((100vw - 300px) / (1300 - 300)));
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: rgb(0, 0, 0);
+  }
+ 
+/* código para tirar funções do video  */
+
+video::-webkit-media-controls-panel{
+    display: none;
+}
+
+/* SEGUNDA LINHA */
+
+  .segundalinha{
+      margin-top: 600px;
+  }
+  
+  .cards{
+    background-color: #ffffff;
+    height: 75vh;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s;
+}
+
+.texto{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: white;
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px #00000056;
+    padding: 0px 10px 0px 10px;
+    transition: all 0.3s;
+    
+}
+
+.title{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 36px;
+    color: #000000;;
+}
+
+.texto:hover {
+    box-shadow: 0px 6px 10px #00000056;
+    transform: scale(1.08);
+}
